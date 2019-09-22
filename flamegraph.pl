@@ -788,6 +788,8 @@ my $inc = <<INC;
 		if (e.keyCode === 114 || (e.ctrlKey && e.keyCode === 70)) {
 			e.preventDefault();
 			search_prompt();
+		} else if (e.keyCode === 27) {
+			unzoom();
 		}
 	}, false)
 
